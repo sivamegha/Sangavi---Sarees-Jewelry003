@@ -1,0 +1,131 @@
+/* === General Contact Section === */
+.contact-section {
+  background-color: #fafafa;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* === Title === */
+.contact-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #4f46e5;
+  font-weight: bold;
+  border-bottom: 3px solid #4f46e5;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* === Info Box === */
+.contact-info {
+  background: #fff;
+  padding: 25px;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.contact-info p {
+  margin: 8px 0;
+}
+
+.contact-info a {
+  color: #0a58ca;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* === Map Styling === */
+.map-box {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+/* === Form Container === */
+.heading {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+  margin-bottom: 40px;
+  text-align: center;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.heading h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* === Form Inputs === */
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #4f46e5;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+/* === Submit Button === */
+form input[type="submit"] {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  padding: 12px 30px;
+  display: block;
+  margin: auto;
+  border-radius: 50px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #3730a3;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 1.6rem;
+  }
+
+  .contact-info {
+    font-size: 1rem;
+  }
+
+  .heading h1 {
+    font-size: 1.5rem;
+  }
+}

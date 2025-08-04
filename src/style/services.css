@@ -1,0 +1,158 @@
+/* services.css */
+
+.collection-section {
+  padding: 40px 20px;
+  padding-left: 20%;
+  background: #fff8f5;
+  font-family: 'Segoe UI', sans-serif;
+    justify-content: center;
+   
+  
+}
+
+.collections-section1 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.collections-heading {
+  font-size: 2.5rem;
+  color: #d63384;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-right: 450px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.collections-text {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #420505;
+margin-left: 50px;
+  animation: slideIn 1s ease-in-out;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 30px;
+}
+
+.feature-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scheme-img {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.saree-3d-box {
+  display: inline-block;
+  margin: 10px;
+  perspective: 1000px;
+  transition: transform 0.4s ease;
+}
+
+.saree-3d-box:hover {
+  transform: scale(1.05) rotateY(5deg);
+}
+
+.saree-3d-img {
+  height: 180px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.collection-box {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.collection-title {
+  font-size: 1.8rem;
+  color: #5e2a5c;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #e83e8c;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.item-box {
+  margin-top: 15px;
+  background: #fff0f6;
+  padding: 15px;
+  border-left: 4px solid #d63384;
+  border-radius: 10px;
+}
+
+.item-title {
+  font-weight: 600;
+  color: #b71540;
+  margin-bottom: 5px;
+}
+
+.item-desc {
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .saree-3d-img {
+    height: 140px;
+  }
+
+  .collection-title {
+    font-size: 1.5rem;
+  }
+
+  .item-desc {
+    font-size: 0.95rem;
+  }
+}
