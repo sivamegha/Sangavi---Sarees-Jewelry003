@@ -226,6 +226,103 @@ const Home = () => {
           </div>
         </div>
       </section>
+   
+
+
+      {/* Professional Footer */}
+      <footer className="professional-footer">
+        <div className="footer-container">
+          <div className="footer-grid">
+            <div className="footer-brand">
+              <div className="brand-section">
+                
+                <span className="brand-name">
+                  <span className="brand-primary">Sangavi</span>
+                  <span className="brand-secondary"> Collections</span>
+                </span>
+              </div>
+              <p className="brand-description">
+                Transforming traditional fashion into modern elegance. Your premier destination for sarees, 
+                ready-made wear, embroidery work, and stunning jewelry in Salem.
+              </p>
+              <div className="social-icons">
+                <a href="https://instagram.com/sangavistore" target="_blank" rel="noreferrer" className="social-icon">
+                  <span>📸</span>
+                </a>
+                <a href="https://facebook.com/sangavistore" target="_blank" rel="noreferrer" className="social-icon">
+                  <span>📘</span>
+                </a>
+                <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer" className="social-icon">
+                  <span>💬</span>
+                </a>
+              </div>
+            </div>
+
+            <div className="footer-services">
+              <h3 className="footer-title">Our Collections</h3>
+              <ul className="footer-links">
+                <li><span>Silk & Cotton Sarees</span></li>
+                <li><span>Ready-Made Wear</span></li>
+                <li><span>Pencil & Aari Work</span></li>
+                <li><span>Gold Covering Jewelry</span></li>
+                <li><span>Bridal Collections</span></li>
+                <li><span>Designer Sarees</span></li>
+                <li><span>Traditional Wear</span></li>
+              </ul>
+            </div>
+
+            <div className="footer-services">
+              <h3 className="footer-title">Special Services</h3>
+              <ul className="footer-links">
+                <li><span>Custom Embroidery Work</span></li>
+                <li><span>Bridal Dress Design</span></li>
+                <li><span>Alteration Services</span></li>
+                <li><span>Festival Collections</span></li>
+                <li><span>Wedding Packages</span></li>
+                <li><span>Home Delivery</span></li>
+                <li><span>Gift Wrapping</span></li>
+              </ul>
+            </div>
+
+            <div className="footer-contact">
+              <h3 className="footer-title">Contact Info</h3>
+              <div className="contact-items">
+                <div className="contact-item">
+                  <span className="contact-icon">📧</span>
+                  <a href="mailto:sangavistore@gmail.com" className="contact-link">
+                    sangavistore@gmail.com
+                  </a>
+                </div>
+                <div className="contact-item">
+                  <span className="contact-icon">📞</span>
+                  <a href="tel:+919876543210" className="contact-link">
+                    +91 98765 43210
+                  </a>
+                </div>
+                <div className="contact-item">
+                  <span className="contact-icon">📍</span>
+                  <a href="https://maps.google.com/?q=No.123, Bazaar Street, Salem-1, Tamil Nadu" target="_blank" rel="noreferrer" className="contact-link">
+                    No.123, Bazaar Street, Salem-1, Tamil Nadu
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="footer-bottom">
+            <div className="footer-copyright">
+              <p className="copyright-text">
+                © 2025 Sangavi Sarees & Collections. All rights reserved.
+              </p>
+            </div>
+            <div className="footer-policies">
+              <span className="policy-link">Privacy Policy</span>
+              <span className="policy-link">Terms of Service</span>
+              <span className="policy-link">Return Policy</span>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 };

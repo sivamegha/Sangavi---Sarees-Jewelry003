@@ -12,6 +12,7 @@
 
 .collections-section1 {
   text-align: center;
+  padding-left: 10%;
   padding-bottom: 30px;
 }
 
@@ -29,7 +30,7 @@
   max-width: 700px;
   margin: 0 auto;
   color: #420505;
-margin-left: 50px;
+margin-left: 10px;
   animation: slideIn 1s ease-in-out;
 }
 
@@ -37,13 +38,14 @@ margin-left: 50px;
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding-top: 30px;
+  padding-top: 50px;
+  
 }
 
 .feature-card {
   background: #fff;
   border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 20px rgba(255, 249, 249, 0.08);
   padding: 25px;
   transition: all 0.3s ease;
 }

@@ -135,7 +135,12 @@ const Services = () => {
   ];
 
   return (
-    <section className="collection-section">
+
+    
+    <section className="services-section">
+   
+
+      <section className="collection-section">
       <section className="collections-section1">
         
         <h2 className="collections-heading">✨ Explore Our Collections</h2>
@@ -172,6 +177,9 @@ const Services = () => {
           </div>
         ))}
       </div>
+    </section>
+
+      
     </section>
   );
 };

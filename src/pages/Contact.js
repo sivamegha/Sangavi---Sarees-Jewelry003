@@ -47,19 +47,6 @@ class Contact extends React.Component {
     return (
       <section className="contact-section">
         <div className="contact-container">
-          {/* Map */}
-          <div className="map-box">
-            <iframe
-              title="Sangavi Location"
-              src="https://www.google.com/maps/embed?pb=..."
-              width="100%"
-              height="300"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-            ></iframe>
-          </div>
-
           {/* Contact Info */}
           <h1 className="contact-title">📞 Contact Us</h1>
           <div className="contact-info">
@@ -128,7 +115,8 @@ class Contact extends React.Component {
             </div>
           </div>
         </div>
-      </section>
+
+           </section>
     );
   }
 }

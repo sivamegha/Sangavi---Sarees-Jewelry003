@@ -1,4 +1,3 @@
-// src/pages/Offers.js
 import React from "react";
 import { Link } from "react-router-dom";
 import offer from "../pictures/offer.jpg";
@@ -66,73 +65,54 @@ const Offers = () => {
   ];
 
   return (
-    
     <section className="offers-section">
-        <section className="offer-section">
-      <h2 className="offer-heading">🎁 Special Offers – Free Gifts!</h2>
-      <p className="offer-subtext">
-        Grab your favorite sarees and dresses and get surprise gifts with every purchase!
-      </p>
+    <section className="offer-section">
+  <h2 className="offer-heading">🎁 Special Offers – Free Gifts!</h2>
+  <p className="offer-subtext">
+    Grab your favorite sarees and dresses and get surprise gifts with every purchase!
+  </p>
 
-      <div className="offer-slider">
-        <div className="slide-track">
-          <div className="slide"><img src={offer} alt="Gift 1" /></div>
-          <div className="slide"><img src={offer1} alt="Gift 2" /></div>
-          <div className="slide"><img src={offer2} alt="Gift 3" /></div>
-          {/* Duplicate for infinite loop effect */}
-          <div className="slide"><img src={offer3} alt="Gift 1" /></div>
-          <div className="slide"><img src={offer4} alt="Gift 2" /></div>
-          <div className="slide"><img src={offer5} alt="Gift 3" /></div>
-          <div className="slide"><img src={offer6} alt="Gift 3" /></div>
-          <div className="slide"><img src={offer7} alt="Gift 3" /></div>
-          <div className="slide"><img src={offer8} alt="Gift 3" /></div>
-          <div className="slide"><img src={offer9} alt="Gift 3" /></div>
-          <div className="slide"><img src={offer10} alt="Gift 3" /></div>
+  <div className="offer-slider">
+    <div className="slide-track">
+      <div className="slide"><img src={offer} alt="Gift 1" /></div>
+      <div className="slide"><img src={offer1} alt="Gift 2" /></div>
+      <div className="slide"><img src={offer2} alt="Gift 3" /></div>
+      {/* Duplicate for infinite loop effect */}
+      <div className="slide"><img src={offer3} alt="Gift 1" /></div>
+      <div className="slide"><img src={offer4} alt="Gift 2" /></div>
+      <div className="slide"><img src={offer5} alt="Gift 3" /></div>
+      <div className="slide"><img src={offer6} alt="Gift 3" /></div>
+      <div className="slide"><img src={offer7} alt="Gift 3" /></div>
+      <div className="slide"><img src={offer8} alt="Gift 3" /></div>
+      <div className="slide"><img src={offer9} alt="Gift 3" /></div>
+      <div className="slide"><img src={offer10} alt="Gift 3" /></div>
+    </div>
+  </div>
+  
+
+  
+</section>
+  <div className="offers-container">
+    <h1 className="offers-title">🎉 Offers & Deals at Sangavi</h1>
+    <div className="offers-grid">
+      {offers.map((offer, index) => (
+        <div key={index} className="offer-box">
+          <h3 className="offer-category">{offer.category}</h3>
+          <ul className="offer-list">
+            {offer.details.map((item, idx) => (
+              <li key={idx} className="offer-item">🔖 {item}</li>
+            ))}
+          </ul>
         </div>
-      </div>
+      ))}
       
+    </div>
 
-      
-    </section>
-      <div className="offers-container">
-        <h1 className="offers-title">🎉 Offers & Deals at Sangavi</h1>
-        <div className="offers-grid">
-          {offers.map((offer, index) => (
-            <div key={index} className="offer-box">
-              <h3 className="offer-category">{offer.category}</h3>
-              <ul className="offer-list">
-                {offer.details.map((item, idx) => (
-                  <li key={idx} className="offer-item">🔖 {item}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-          
-        </div>
+    
+  </div>
 
-        
-      </div>
-      <footer className="footer">
-           <Link to="/contact" className="mt-10 inline-block bg-rose-600 text-white px-6 py-3 rounded-full text-lg font-medium hover:bg-rose-700 transition">
-          Contact Us
-        </Link>
-          <div className="contact-details mt-16 text-sm text-gray-700">
-            <p><strong>🏬 Store:</strong> Sangavi – Sarees & Collections</p>
-            <p><strong>📍 Address:</strong> No.123, Bazaar Street, Salem-1, Tamil Nadu</p>
-            <p><strong>📞 Phone:</strong> <a href="tel:+919876543210">+91 98765 43210</a></p>
-            <p><strong>📧 Email:</strong> <a href="mailto:sangavistore@gmail.com">sangavistore@gmail.com</a></p>
-            <p><strong>🕒 Hours:</strong> Mon–Sun, 9:30 AM – 9:00 PM</p>
-            <div className="social-links mt-3">
-              <a href="https://instagram.com/sangavistore" target="_blank" rel="noreferrer">📸 Instagram</a> |{" "}
-              <a href="https://facebook.com/sangavistore" target="_blank" rel="noreferrer">📘 Facebook</a> |{" "}
-              <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer">💬 WhatsApp</a>
-            </div>
-          </div>
-        </footer>
-        
+    
     </section>
-    
-    
   );
 };
 
